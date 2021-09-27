@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID.Library
 {
-    public class Recipe
+    public class Recipe 
     {
         private IList<Step> steps = new List<Step>();
 
