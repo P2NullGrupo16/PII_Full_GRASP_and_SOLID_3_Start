@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID.Library
 {
-public class FilePrinter : IPrinter
-{
-    public void PrintTicket(Recipe recipe)
+    public class FilePrinter : IPrinter
     {
-        File.WriteAllText("Recipe.txt", recipe.GetTextToPrint());
+        public void PrintTicket(Recipe recipe)
+        {
+            File.WriteAllText("Impresión_de_Receta.txt", recipe.GetTextToPrint());
+        }
     }
-}
 }

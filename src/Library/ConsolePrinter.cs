@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID.Library
 {
-public class ConsolePrinter : IPrinter
-{
-    public void PrintTicket(Recipe recipe)
+    public class ConsolePrinter : IPrinter
     {
-        Console.WriteLine(recipe.GetTextToPrint());
+        public void PrintTicket(Recipe recipe)
+        {
+            Console.WriteLine(recipe.GetTextToPrint());
+        }
     }
-}
 }
